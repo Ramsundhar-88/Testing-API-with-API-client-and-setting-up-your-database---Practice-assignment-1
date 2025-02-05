@@ -7,7 +7,6 @@
 // POST /students/above-threshold
 //
 // Request Body:
-
 // {
 //   "threshold": <number>
 // }
@@ -48,28 +47,3 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
-
-app.post('/students/above-threshold', (req, res) => {
-  const { threshold } = req.body;
-
-  // Validate the threshold
-  if (typeof threshold !== 'number' || threshold <= 0) {
-    return res.status(400).json({ error: "Invalid threshold value" });
-  }
-
-  // Filter students based on the threshold
-  const filteredStudents = students.filter(student => student.total > threshold);
-
-  // Prepare the response
-  const response = {
-    count: filteredStudents.length,
-    students: filteredStudents.map(student => ({
-      name: student.name,
-      total: student.total
-    }))
-  };
-
-  // Send the response
-  res.json(response);
-});
-

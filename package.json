@@ -8,5 +8,20 @@
     "body-parser": "^1.20.3",
     "express": "^4.18.2",
     "nodemon": "^3.1.7"
-  }
+  },
+  "description": "You are a developer for an educational analytics platform that helps teachers evaluate students' performance. The platform maintains student records, including their names, grades, and marks in multiple subjects, stored in a JSON format.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ramsundhar-88/Testing-API-with-API-client-and-setting-up-your-database---Practice-assignment-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ramsundhar-88/Testing-API-with-API-client-and-setting-up-your-database---Practice-assignment-1/issues"
+  },
+  "homepage": "https://github.com/Ramsundhar-88/Testing-API-with-API-client-and-setting-up-your-database---Practice-assignment-1#readme"
 }
